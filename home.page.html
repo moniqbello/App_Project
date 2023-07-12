@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>
+      Anilao Boarding House
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding class="background"></ion-content>
+  
+  <div id="container">
+    <ion-card color=warning>
+      <img alt="bg4" src="./bg4.png" />
+      <ion-card-header>
+        <ion-card-title>Welcome to</ion-card-title>
+        <ion-card-subtitle>ANILAO BOARDING HOUSE</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Anilao Boarding House is located few step away from the beach front. It is great place to relax, it's peaceful and cozy. Owner is a PADI scuba instructor and offers all PADI courses and intro dives.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" [routerLink]="['/rooms']">
+        <ion-icon name="bed"></ion-icon>
+        Rooms
+      </ion-tab-button>
+      <ion-tab-button tab="walk" [routerLink]="['/activities']">
+        <ion-icon name="walk"></ion-icon>
+        Activities
+      </ion-tab-button>
+      <ion-tab-button tab="hourglass">
+        <ion-icon name="hourglass"></ion-icon>
+        Rental Equipment
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Search
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
